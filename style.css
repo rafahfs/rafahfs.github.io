@@ -1,0 +1,145 @@
+body {
+    background-color: white;
+}
+
+h3{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif
+}
+.principal {
+    background-color: rgb(223, 219, 219);
+    margin: 0 300px 0 300px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 70%;
+}
+
+.lado_esquerdo {
+    background-color: rgb(47, 166, 187);
+}
+
+.foto_perfil {
+    display: flex;
+    margin: 30px auto 50px auto;
+    border-radius: 50%;
+}
+
+.titulo_contato {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.bloco_informacao{
+    display: flex;
+    color: white;
+    margin-left: 16px;
+    margin-right: 14px;
+    margin-bottom: 10px;
+    align-items: center;
+    flex-direction: row;   
+}
+
+.descricao{
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
+    font-family: Andale Mono, monospace;
+    margin-left: 14px;
+}
+
+.descricao_skills {
+    color: white;
+    font-size: 15px;
+    margin-left: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.bloco_skills {
+    margin: 2px 12px 12px 14px;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.skills {
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+.html {
+    width: 50%;
+    background-color: rgb(7, 53, 112);
+}
+.css {
+    width: 40%;
+    background-color: rgb(7, 53, 112);
+}
+
+.lado_direito {
+    margin-left: 22px;
+    margin-right: 16px;
+    color:rgb(7, 53, 112);
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+h2 {
+    margin: 70px auto 12px auto;
+    font-size: 28px;
+}
+
+h5 {
+    margin: 8px auto 90px auto;
+    font-size: 12px;
+    text-transform: none;
+}
+
+.descricao_perfil {
+    color: rgb(61, 61, 175);
+    font-size: 15px;
+    margin-top: 16px;
+    margin-bottom: 12px;
+}
+
+/* Media Queries */
+
+@media (max-width: 1024px) {
+    .principal {
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px){
+    body{
+        background-color: white;
+    }
+
+    .principal {
+        width: 50%;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        text-align: left;
+    }
+
+    .lado_esquerdo {
+        display: none;
+    }
+
+    .lado_direito {
+        width: 100%;
+    }
+
+
+}
+
+/*
+@media (min-width: 768px){
+    .principal{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}*/
